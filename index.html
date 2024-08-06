@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC 316</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+
+    <fieldset>
+        <legend id="legend">Personal details</legend>
+
+        <form id="registrationForm">
+            <p>
+                <label for="firstname">First Name</label><br>
+                <input type="text" id="firstname" placeholder="First name only" pattern="[a-zA-Z]+" required>
+            </p>
+
+            <p>
+                <label for="lastname">Last Name</label><br>
+                <input type="text" id="lastname" placeholder="Last name" pattern="[a-zA-Z]+" required>
+            </p>
+
+            <p>
+                <label for="dateofbirth">Date of Birth</label><br>
+                <input type="date" id="dateofbirth" required>
+            </p>
+
+            <p>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="example@domain.com" required>
+            </p>
+
+            <p>
+                <label for="url">URL</label><br>
+                <input type="url" id="url" placeholder="http://mysite.com">
+            </p>
+
+            <p>
+                <label for="telephone">Telephone</label><br>
+                <input type="tel" id="telephone" placeholder="Eg +447000 000000">
+            </p>
+
+            <p>
+                <label for="shoesize">Shoe size</label><br>
+                <input type="number" id="shoesize" placeholder="0" required>
+            </p>
+
+            <p>
+                <label for="range">Flying Skill level (1 Low - 100 high)</label><br>
+                <input type="range" id="range" min="1" max="100">
+            </p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+
+    <script src="script.js"></script>
+</body>
+</html>
